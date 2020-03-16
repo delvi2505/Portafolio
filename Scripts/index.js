@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
 function chargerPage(htmlDoc, ancla, page){
     
     const http = new XMLHttpRequest();
-    var url = "http://192.168.0.100:2000/Views/" + htmlDoc;
+    var url = "https://delvi2505.github.io/Portafolio/Views/" + htmlDoc;
     http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
             document.getElementById("containerPage").innerHTML = this.responseText;
