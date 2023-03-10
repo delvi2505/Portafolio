@@ -6,33 +6,29 @@
     <title>Hernández Web</title>
 </head>
 <body>
-    <p class="HomeInformationSpanish" style="display:none;">
-        {
-            "UrlPage": "https://www.leercapitulo.com",
-            "UltimosItemsSelectors": {
-                "ItemsSelector": "div.media.mainpage-manga",
-                "TitleSelector": "div.media-body \u003E a \u003E h4",
-                "ImgSelector": "img.media-object",
-                "ImgSrcBase": "https://www.leercapitulo.com",
-                "NumeroMangaSelector": "a.xanh"
-            },
-            "TendenciasItemsSelectors":{
-                "ItemsSelector": "body > div.update-list > div.container > div.row > div.col-md-12 > div.hot-manga",
-                "TitleSelector": "div.caption > a > h3",
-                "ImgSelector": "div.thumbnails > a > img",
-                "ImgSrcBase": "https://www.leercapitulo.com",
-                "NumeroMangaSelector": ""
-            }
-        }
-
-    </p>
     
-    <p class="LibraryInformationSpanish" style="display:none;">
+    <div class="versiones">
+        <p class="1.0.0">
+            {
+                "Version":"1.0.0",
+                "Notas":"Primera versión de la app",
+                "Estado":"desarrollo",
+                "OrdenPublicacion": 1
+            }
+        </p>
+    </div>
+    
+    <div class="recomendaciones">
         {
-            "UrlPage": "https://www.leercapitulo.com/search-autocomplete?term",
-            "UrlBaseImage": "https://www.leercapitulo.com"
+            "TitulosRecomendados":[
+                    {"Item-1"},
+                    {"Item-2"},
+                    {"Item-3"},
+                    {"Item-4"},
+                ]
         }
-    </p>
+    </div>
+    
 </body>
 </html>
 
