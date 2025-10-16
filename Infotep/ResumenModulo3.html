@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Aprendizaje Basado en Proyectos (ABPr)</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuración de fuente Inter y colores base */
+        :root {
+            --color-primary: #10B981; /* Esmeralda 500 */
+            --color-secondary: #3B82F6; /* Azul 500 */
+            --color-accent: #F59E0B; /* Ámbar 500 */
+            --color-bg: #F9FAFB; /* Gris muy claro */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg);
+            line-height: 1.6;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 4px solid var(--color-accent);
+            display: inline-block;
+        }
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .process-icon-container {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            z-index: 10;
+        }
+        /* Estilos específicos para la línea de tiempo */
+        @media (min-width: 768px) {
+            .timeline-container {
+                position: relative;
+                padding-left: 20px;
+            }
+            .timeline-container::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 45px; /* Ajuste para centrar la línea con los íconos */
+                width: 4px;
+                background-color: var(--color-secondary);
+            }
+        }
+    </style>
+    <!-- Carga de la fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Contenedor Principal de la Infografía -->
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-100">
+
+        <!-- Encabezado / Título Principal -->
+        <header class="bg-gradient-to-r from-teal-600 to-green-500 p-8 sm:p-10 text-white text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-2">Aprendizaje Basado en Proyectos</h1>
+            <h2 class="text-xl sm:text-2xl font-light">Centrado en el Participante (ABPr)</h2>
+            <p class="mt-4 text-sm opacity-90">Metodología de excelencia para la formación profesional.</p>
+        </header>
+
+        <main class="p-6 sm:p-10">
+
+            <!-- SECCIÓN 1: Definición y Propósito -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 section-title">1. ¿Qué es el ABPr?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-lg border-t-4 border-blue-500 transform hover:scale-[1.02] transition duration-300">
+                        <span class="text-4xl mb-3 block">🌟</span>
+                        <p class="font-bold text-lg text-blue-800">Participante</p>
+                        <p class="text-gray-600 text-sm mt-1">Protagonista activo de su propio aprendizaje.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-red-50 rounded-xl shadow-lg border-t-4 border-red-500 transform hover:scale-[1.02] transition duration-300">
+                        <span class="text-4xl mb-3 block">🤝</span>
+                        <p class="font-bold text-lg text-red-800">Equipos Diversos</p>
+                        <p class="text-gray-600 text-sm mt-1">Organización para realizar proyectos complejos.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-yellow-50 rounded-xl shadow-lg border-t-4 border-yellow-500 transform hover:scale-[1.02] transition duration-300">
+                        <span class="text-4xl mb-3 block">💡</span>
+                        <p class="font-bold text-lg text-yellow-800">Meta Dual</p>
+                        <p class="text-gray-600 text-sm mt-1">Desarrollo de habilidades **técnicas** y **blandas**.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: Pilares Fundamentales -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 section-title">2. Pilares Esenciales</h3>
+                <p class="text-gray-600 mb-6 italic">Características indispensables para el diseño de un proyecto exitoso.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Pilar 1 -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <span class="text-3xl mr-3 flex-shrink-0">❓</span>
+                        <div>
+                            <p class="font-bold text-teal-600">Pregunta Impulsora</p>
+                            <p class="text-sm text-gray-600">Plantea un desafío o problema real que genera motivación.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pilar 2 -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <span class="text-3xl mr-3 flex-shrink-0">🔍</span>
+                        <div>
+                            <p class="font-bold text-teal-600">Investigación</p>
+                            <p class="text-sm text-gray-600">Proceso clave para encontrar y validar soluciones.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pilar 3 -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <span class="text-3xl mr-3 flex-shrink-0">🗣️</span>
+                        <div>
+                            <p class="font-bold text-teal-600">Voz y Voto</p>
+                            <p class="text-sm text-gray-600">Participación activa en la toma de decisiones y organización.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pilar 4 -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <span class="text-3xl mr-3 flex-shrink-0">🎁</span>
+                        <div>
+                            <p class="font-bold text-teal-600">Producto Final</p>
+                            <p class="text-sm text-gray-600">Respuesta tangible, útil y significativa al problema inicial.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pilar 5 -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <span class="text-3xl mr-3 flex-shrink-0">🔄</span>
+                        <div>
+                            <p class="font-bold text-teal-600">Reflexión y Crítica</p>
+                            <p class="text-sm text-gray-600">Evaluación constante del proceso y resultados para la mejora.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pilar 6 -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <span class="text-3xl mr-3 flex-shrink-0">🧑‍🤝‍🧑</span>
+                        <div>
+                            <p class="font-bold text-teal-600">Realización Colectiva</p>
+                            <p class="text-sm text-gray-600">Fomenta el consenso, la cooperación y la responsabilidad grupal.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: Etapas del Proceso Integrado (Timeline) -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 section-title">3. Las 3 Etapas del ABPr</h3>
+
+                <div class="timeline-container relative pt-4">
+
+                    <!-- Etapa INICIAL -->
+                    <div class="process-step md:pl-20">
+                        <div class="process-icon-container bg-red-500 text-xl">1</div>
+                        <div class="md:ml-6 mt-2 p-4 bg-red-100 rounded-lg shadow-md border-l-4 border-red-500 w-full">
+                            <h4 class="font-extrabold text-xl text-red-700 mb-1">INICIAL: Informar y Planificar</h4>
+                            <p class="text-sm text-gray-700">El participante **analiza** la problemática, **investiga** el contexto y **define** el plan de acción (el qué, cómo y cuándo).</p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa INTERMEDIA -->
+                    <div class="process-step md:pl-20">
+                        <div class="process-icon-container bg-yellow-500 text-xl">2</div>
+                        <div class="md:ml-6 mt-2 p-4 bg-yellow-100 rounded-lg shadow-md border-l-4 border-yellow-500 w-full">
+                            <h4 class="font-extrabold text-xl text-yellow-700 mb-1">INTERMEDIA: Realizar y Controlar</h4>
+                            <p class="text-sm text-gray-700">El participante **ejecuta** las tareas planificadas con autonomía grupal y realiza **reflexiones** constantes sobre el avance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa FINAL -->
+                    <div class="process-step md:pl-20">
+                        <div class="process-icon-container bg-green-500 text-xl">3</div>
+                        <div class="md:ml-6 mt-2 p-4 bg-green-100 rounded-lg shadow-md border-l-4 border-green-500 w-full">
+                            <h4 class="font-extrabold text-xl text-green-700 mb-1">FINAL: Evaluar y Concluir</h4>
+                            <p class="text-sm text-gray-700">El participante **presenta** el producto final al grupo o cliente y **evalúa** de forma crítica todo el proceso realizado.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: Beneficios Clave -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 section-title">4. Beneficios para el Participante</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                    <div class="p-4 bg-indigo-100 rounded-xl text-center">
+                        <span class="text-3xl block mb-1">💼</span>
+                        <p class="font-semibold text-sm text-indigo-800">Desarrollo Profesional</p>
+                    </div>
+
+                    <div class="p-4 bg-indigo-100 rounded-xl text-center">
+                        <span class="text-3xl block mb-1">🧠</span>
+                        <p class="font-semibold text-sm text-indigo-800">Pensamiento Crítico</p>
+                    </div>
+
+                    <div class="p-4 bg-indigo-100 rounded-xl text-center">
+                        <span class="text-3xl block mb-1">🚀</span>
+                        <p class="font-semibold text-sm text-indigo-800">Autonomía y Liderazgo</p>
+                    </div>
+
+                    <div class="p-4 bg-indigo-100 rounded-xl text-center">
+                        <span class="text-3xl block mb-1">🗓️</span>
+                        <p class="font-semibold text-sm text-indigo-800">Planificación Metódica</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: Rol del Docente -->
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 section-title">5. El Rol del Docente: Guía y Facilitador</h3>
+                <div class="bg-gray-100 p-6 rounded-xl border border-gray-300">
+                    <p class="text-lg font-medium text-gray-700 mb-3">El docente deja de ser un transmisor de conocimiento para convertirse en un **líder, mentor y fuente de consulta**.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-2 flex-shrink-0">✅</span>
+                            <span>**Coordinador y Presentador:** Formula y consensúa la problemática principal del proyecto.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-2 flex-shrink-0">✅</span>
+                            <span>**Acompañante y Monitor:** Asesora la planificación, monitorea la ejecución y aplica instrumentos de control.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-2 flex-shrink-0">✅</span>
+                            <span>**Guía de Reflexión:** Promueve el análisis y la autoevaluación en cada etapa para garantizar la mejora continua.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script para asegurar que la línea de tiempo se vea bien en móvil (opcional si Tailwind ya maneja esto, pero es una buena práctica) -->
+    <script>
+        // Simplemente agregamos una clase para la fuente Inter, aunque ya se cargó en el head
+        document.body.classList.add('font-inter');
+    </script>
+</body>
+</html>
